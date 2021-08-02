@@ -8,14 +8,19 @@ key_left = keys[? "left"];
 key_right = keys[? "right"];
 key_shoot = keys[? "shoot"];
 
-spd = 2;
+spd = 3;
 tilt_degrees = 20;
 
 can_shoot = true;
 
-wifi_level = 4000;
+wifi_level = 5000;
 wifi_loss = 50;
+wifi_gain = 500;
 wifi_beeping = false;
-
-// Game over flag
 freeze = false;
+
+player_score = 0;
+
+invincible = false;
+show = true;
+dead = false;
