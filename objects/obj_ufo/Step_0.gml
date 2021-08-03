@@ -1,6 +1,6 @@
 /// @description Logic
 
-var last_x = x;
+var last_x = x, last_y = y;
 
 if (!freeze) {
 	// Movement logic
@@ -10,8 +10,20 @@ if (!freeze) {
 	// Shoot logic
 	if (keyboard_check_pressed(key_shoot) && can_shoot) {
 		can_shoot = false;
-		instance_create_layer(x, y, LAYER_INSTANCES, obj_bullet);
+		instance_create_layer(x, y, LAYER_INSTANCES, obj_ufo_bullet);
 		alarm[1] = 0.5 * room_speed;
+	}
+	
+	// Bomb logic
+	if (keyboard_check_pressed(key_bomb) && can_shoot_bomb) {
+		can_shoot_bomb = false;
+		var bomb = instance_create_layer(x, y, LAYER_INSTANCES, obj_ufo_bomb);
+		
+		// Calculate bomb direction
+		bomb.direction = -radtodeg(arctan2(y - last_y, x - last_x));
+
+		bomb.speed = 3;
+		alarm[4] = 0.5 * room_speed;
 	}
 }
 

@@ -14,7 +14,7 @@ if (wifi_level > 0 && wifi_level <= 1000) {
 	wifi_signal = 1;
 }
 
-draw_text(10, 10, "diff: " + string(obj_manager.difficulty) + " | speed: " + string((3 * room_speed) - (obj_manager.difficulty / 5)));
+draw_text(10, 10, "diff: " + string(obj_manager.difficulty) + " | speed: " + string((1.5 * room_speed) - obj_manager.difficulty));
 if (wifi_level > 0) {
 	draw_sprite_ext(spr_wifi_indicator, wifi_signal - 1 - (wifi_beeping ? 1 : 0), 0, room_height, 3, 3, 0, c_white, 1);
 }
@@ -22,6 +22,9 @@ if (wifi_level > 0) {
 // Draw score
 draw_set_halign(fa_right);
 draw_text(room_width - 10, 10, string(player_score));
+if (obj_manager.high_score > 0) {
+	draw_text(room_width - 10, 25, "HI " + string(obj_manager.high_score));
+}
 draw_set_halign(fa_left);
 
 // Draw wifi sprites

@@ -7,11 +7,13 @@ key_down = keys[? "down"];
 key_left = keys[? "left"];
 key_right = keys[? "right"];
 key_shoot = keys[? "shoot"];
+key_bomb = keys[? "bomb"];
 
 spd = 3;
 tilt_degrees = 20;
 
 can_shoot = true;
+can_shoot_bomb = true;
 
 wifi_level = 5000;
 wifi_loss = 50;

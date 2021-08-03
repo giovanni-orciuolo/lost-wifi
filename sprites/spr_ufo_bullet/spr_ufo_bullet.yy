@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6994eee6-5010-4e59-bfc0-3267113a61b9","path":"sprites/spr_bullet/spr_bullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6994eee6-5010-4e59-bfc0-3267113a61b9","path":"sprites/spr_bullet/spr_bullet.yy",},"LayerId":{"name":"e9232387-7c19-42be-b377-ffb32da9c506","path":"sprites/spr_bullet/spr_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"resourceVersion":"1.0","name":"6994eee6-5010-4e59-bfc0-3267113a61b9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6994eee6-5010-4e59-bfc0-3267113a61b9","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6994eee6-5010-4e59-bfc0-3267113a61b9","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},"LayerId":{"name":"e9232387-7c19-42be-b377-ffb32da9c506","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ufo_bullet","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},"resourceVersion":"1.0","name":"6994eee6-5010-4e59-bfc0-3267113a61b9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},
+    "spriteId": {"name":"spr_ufo_bullet","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"78506fca-27b9-46f5-82a8-c729ec848000","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6994eee6-5010-4e59-bfc0-3267113a61b9","path":"sprites/spr_bullet/spr_bullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"78506fca-27b9-46f5-82a8-c729ec848000","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6994eee6-5010-4e59-bfc0-3267113a61b9","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 2,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},
+    "parent": {"name":"spr_ufo_bullet","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_bullet",
+    "name": "spr_ufo_bullet",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_bullet",
+  "name": "spr_ufo_bullet",
   "tags": [],
   "resourceType": "GMSprite",
 }

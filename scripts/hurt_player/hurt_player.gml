@@ -1,4 +1,3 @@
-/// @param
 function hurt_player() {
 	with (obj_ufo) {
 		if (wifi_level <= 0) {
@@ -9,7 +8,7 @@ function hurt_player() {
 			return;
 		}
 		
-		wifi_level -= 250;
+		wifi_level -= 1000;
 		invincible = true;
 		player_score -= 10;
 		player_score = max(player_score, 0);

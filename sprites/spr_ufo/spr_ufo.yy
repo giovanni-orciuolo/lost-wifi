@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 9,
   "preMultiplyAlpha": false,
@@ -25,7 +25,6 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"0c1e7e8e-2c64-4791-98a9-efd000537440","path":"sprites/spr_ufo/spr_ufo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0c1e7e8e-2c64-4791-98a9-efd000537440","path":"sprites/spr_ufo/spr_ufo.yy",},"LayerId":{"name":"31bd3508-aabb-4046-bf00-13764d369d77","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"0c1e7e8e-2c64-4791-98a9-efd000537440","path":"sprites/spr_ufo/spr_ufo.yy",},"LayerId":{"name":"b9200c8f-78f8-4f70-ac32-d8eead3b7044","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","name":"0c1e7e8e-2c64-4791-98a9-efd000537440","tags":[],"resourceType":"GMSpriteFrame",},
   ],

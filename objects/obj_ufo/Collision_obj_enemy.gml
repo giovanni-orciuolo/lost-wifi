@@ -2,4 +2,5 @@
 
 if (!invincible) {
 	hurt_player();
+	kill_enemy(other);
 }

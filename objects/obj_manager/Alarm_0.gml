@@ -42,4 +42,4 @@ switch (entity) {
 	break;
 }
 
-alarm[0] = (3 * room_speed) - (difficulty / 10);
+alarm[0] = (1.5 * room_speed) - difficulty;
