@@ -1,5 +1,4 @@
 /// @description Initialize keys
-
 var keys = obj_keys.key_bindings[| player_index];
 
 key_up = keys[? "up"];
@@ -15,6 +14,10 @@ tilt_degrees = 20;
 can_shoot = true;
 can_shoot_bomb = true;
 
+// Fire rates are in seconds
+fire_rate = 0.7;
+bomb_fire_rate = 3;
+
 wifi_level = 5000;
 wifi_loss = 50;
 wifi_gain = 500;
@@ -26,3 +29,6 @@ player_score = 0;
 invincible = false;
 show = true;
 dead = false;
+shield = false;
+
+image_speed = 0;

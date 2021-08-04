@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Ufo",
+    "path": "folders/Objects/Ufo.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ufo_bullet",

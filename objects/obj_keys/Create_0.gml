@@ -8,7 +8,7 @@ keys_1p[? "down"] = vk_down;
 keys_1p[? "left"] = vk_left;
 keys_1p[? "right"] = vk_right;
 keys_1p[? "shoot"] = vk_enter;
-keys_1p[? "bomb"] = vk_rshift;
+keys_1p[? "bomb"] = vk_backspace;
 ds_list_add(key_bindings, keys_1p);
 
 keys_2p = ds_map_create();

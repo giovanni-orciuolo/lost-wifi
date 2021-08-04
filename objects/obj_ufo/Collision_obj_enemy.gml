@@ -1,6 +1,6 @@
 /// @description Get hurt
 
 if (!invincible) {
-	hurt_player();
+	hurt_player(self);
 	kill_enemy(other);
 }

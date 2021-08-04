@@ -1,4 +1,4 @@
 /// @description Hurts
 
-hurt_player();
+hurt_player(other);
 instance_destroy();

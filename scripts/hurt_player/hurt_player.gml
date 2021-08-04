@@ -1,5 +1,10 @@
-function hurt_player() {
-	with (obj_ufo) {
+function hurt_player(player_inst) {
+	with (player_inst) {
+		if (shield) {
+			// Do not take damage while shielded
+			return;
+		}
+		
 		if (wifi_level <= 0) {
 			dead = true;
 			hspeed = 0;

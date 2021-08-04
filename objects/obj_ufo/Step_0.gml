@@ -11,7 +11,7 @@ if (!freeze) {
 	if (keyboard_check_pressed(key_shoot) && can_shoot) {
 		can_shoot = false;
 		instance_create_layer(x, y, LAYER_INSTANCES, obj_ufo_bullet);
-		alarm[1] = 0.5 * room_speed;
+		alarm[1] = fire_rate * room_speed;
 	}
 	
 	// Bomb logic
@@ -23,7 +23,7 @@ if (!freeze) {
 		bomb.direction = -radtodeg(arctan2(y - last_y, x - last_x));
 
 		bomb.speed = 3;
-		alarm[4] = 0.5 * room_speed;
+		alarm[4] = bomb_fire_rate * room_speed;
 	}
 }
 

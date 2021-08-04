@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Ufo",
+    "path": "folders/Sprites/Ufo.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_wifi_indicator",
