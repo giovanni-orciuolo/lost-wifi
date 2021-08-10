@@ -4,7 +4,7 @@ if (!game_over) {
 	difficulty += 0.1 / room_speed;
 }
 
-layer_hspeed(layer_get_id(LAYER_BACKGROUND), -(1 + difficulty));
+layer_hspeed(layer_get_id(LAYER_BACKGROUND), -(1 + (difficulty / 20)));
 
 if (game_over && keyboard_check_pressed(obj_keys.keys_1p[? "shoot"])) {
 	game_over = false;
@@ -15,7 +15,7 @@ if (game_over && keyboard_check_pressed(obj_keys.keys_1p[? "shoot"])) {
 	
 	new_score = 0;
 	difficulty = 0;
-	alarm[0] = (2 * room_speed) - difficulty;
+	alarm[0] = 1.5 * room_speed;
 	
 	room_restart();
 }

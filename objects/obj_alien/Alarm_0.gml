@@ -6,4 +6,4 @@ if (obj_manager.game_over) {
 
 shoot(obj_enemy_bullet, obj_ufo);
 
-alarm[0] = 3 * room_speed;
+alarm[0] = (3 * room_speed) - (obj_manager.difficulty / 20);

@@ -1,4 +1,4 @@
-/// @description Mask index
+/// @description Mask index (UNUSED)
 
 //switch (floor(image_index)) {
 //	case 2:

@@ -60,12 +60,12 @@ var inst = instance_create_layer(
 switch (entity) {
 	case obj_rock:
 		with (inst) {
-			hspeed = -random_range(1, 3);
+			hspeed = -random_range(1, 3) - (obj_manager.difficulty / 20);
 		}
 	break;
 	case obj_alien:
 		with (inst) {
-			hspeed = -random_range(1, 1.5);
+			hspeed = -random_range(1, 1.5) - (obj_manager.difficulty / 20);
 		}
 	break;
 }

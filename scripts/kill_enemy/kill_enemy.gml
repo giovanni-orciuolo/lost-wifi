@@ -1,5 +1,9 @@
 function kill_enemy(enemy_instance) {
 	with (enemy_instance) {
+		if (dead) {
+			return;
+		}
+		
 		if (random(100) <= loot_percent - (obj_manager.difficulty / 10)) {
 			var wifi = instance_create_layer(x, y, LAYER_INSTANCES, obj_wifi_pickup);
 			wifi.hspeed = hspeed;

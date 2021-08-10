@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Others",
+    "path": "folders/Sprites/Others.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_death_small",
