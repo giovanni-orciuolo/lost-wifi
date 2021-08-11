@@ -9,7 +9,7 @@ if (irandom_range(0, 100) <= 20) {
 	// Throw another dice to choose the pickup
 	var d = irandom_range(0, 100);
 	
-	// Wifi: 40%
+	// Wifi: 70%
 	if (d <= 40) {
 		var pickup = instance_create_layer(
 			room_width + 32,
@@ -19,7 +19,7 @@ if (irandom_range(0, 100) <= 20) {
 		);
 		pickup.hspeed = -random_range(3, 7);
 	}
-	// Shield: 20%
+	// Shield: 10%
 	else if (d > 40 && d <= 60) {
 		var pickup = instance_create_layer(
 			room_width + 32,
@@ -29,7 +29,7 @@ if (irandom_range(0, 100) <= 20) {
 		);
 		pickup.hspeed = -random_range(4, 7);
 	}
-	// Fire Rate: 40%
+	// Fire Rate: 20%
 	else if (d > 60 && d <= 100) {
 		var pickup = instance_create_layer(
 			room_width + 32,
@@ -63,12 +63,12 @@ var inst = instance_create_layer(
 switch (entity) {
 	case obj_rock:
 		with (inst) {
-			hspeed = -random_range(1, 3) - (obj_manager.difficulty / 20);
+			hspeed = -random_range(1, 3) - (obj_manager.difficulty / 10);
 		}
 	break;
 	case obj_alien:
 		with (inst) {
-			hspeed = -random_range(1, 1.5) - (obj_manager.difficulty / 20);
+			hspeed = -random_range(1, 1.5) - (obj_manager.difficulty / 10);
 		}
 	break;
 }
