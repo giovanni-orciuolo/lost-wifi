@@ -5,6 +5,7 @@
     {"id":{"name":"obj_keys","path":"objects/obj_keys/obj_keys.yy",},"order":1,},
     {"id":{"name":"spr_ufo_bullet","path":"sprites/spr_ufo_bullet/spr_ufo_bullet.yy",},"order":1,},
     {"id":{"name":"spr_ufo_bomb","path":"sprites/spr_ufo_bomb/spr_ufo_bomb.yy",},"order":2,},
+    {"id":{"name":"sin_oscillate","path":"scripts/sin_oscillate/sin_oscillate.yy",},"order":4,},
     {"id":{"name":"obj_wifi_pickup","path":"objects/obj_wifi_pickup/obj_wifi_pickup.yy",},"order":1,},
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},"order":2,},
     {"id":{"name":"destroy_if_outside","path":"scripts/destroy_if_outside/destroy_if_outside.yy",},"order":3,},
@@ -35,6 +36,7 @@
     {"id":{"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},"order":0,},
     {"id":{"name":"spr_invincibility_pickup","path":"sprites/spr_invincibility_pickup/spr_invincibility_pickup.yy",},"order":1,},
     {"id":{"name":"spr_rock_debris","path":"sprites/spr_rock_debris/spr_rock_debris.yy",},"order":3,},
+    {"id":{"name":"obj_alien_elite","path":"objects/obj_alien_elite/obj_alien_elite.yy",},"order":4,},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":0,},
   ],
   "Options": [

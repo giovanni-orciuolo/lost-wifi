@@ -46,8 +46,11 @@ var d = irandom_range(0, 100), entity = noone;
 if (d <= 50) {
 	entity = obj_rock;
 }
-if (d > 50) {
+if (d > 50 && d <= 80) {
 	entity = obj_alien;
+}
+if (d > 80) {
+	entity = difficulty > 5 ? obj_alien_elite : obj_alien;
 }
 
 var inst = instance_create_layer(
