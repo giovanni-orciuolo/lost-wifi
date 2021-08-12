@@ -1,6 +1,6 @@
 /// @description Create stars
 
-num_stars = 20;
+num_stars = 40;
 stars = array_create(num_stars);
 
 for (var i = 0; i < num_stars; i++) {

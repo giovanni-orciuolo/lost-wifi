@@ -12,6 +12,16 @@ if (!freeze) {
 		can_shoot = false;
 		instance_create_layer(x + 5, y - 10, LAYER_INSTANCES, obj_ufo_bullet);
 		alarm[1] = fire_rate * room_speed;
+		audio_play_sound(snd_shoot, 10, false);
+	}
+	
+	// Set off the nearest bomb
+	if (keyboard_check_pressed(key_bomb) && !can_shoot_bomb) {
+		var bomb = instance_nearest(x, y, obj_ufo_bomb);
+		if (bomb != noone) {
+			bomb.image_speed = 1;
+			bomb.speed = 0;
+		}
 	}
 	
 	// Bomb logic
@@ -54,4 +64,10 @@ var beeping = (wifi_level > 3000 && wifi_level <= 3300)
 			   
 if (beeping && alarm[0] == -1) {
 	alarm_set(0, 0.5 * room_speed);
+}
+
+// Determine signal level
+wifi_signal = wifi_level > 3000 ? 4 : ceil(wifi_level / 1000);
+if (wifi_level <= 0) {
+	wifi_signal = 0;
 }

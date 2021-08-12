@@ -23,8 +23,7 @@ wifi_loss = 50;
 wifi_gain = 500;
 wifi_beeping = false;
 freeze = false;
-
-player_score = 0;
+wifi_signal = 4; // Level 0 to 4
 
 invincible = false;
 show = true;

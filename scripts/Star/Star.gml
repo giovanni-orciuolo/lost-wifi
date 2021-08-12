@@ -9,6 +9,6 @@ function Star(_x, _y) constructor {
         }
     }
 	draw = function() {
-		draw_rectangle(xx, yy, xx + 1, yy + 1, c_white);
+		draw_rectangle(xx, yy, xx + 1, yy + 1, false);
 	}
 }

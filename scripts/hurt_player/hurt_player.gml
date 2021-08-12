@@ -15,8 +15,7 @@ function hurt_player(player_inst) {
 		
 		wifi_level -= 1000;
 		invincible = true;
-		player_score -= 10;
-		player_score = max(player_score, 0);
+		
 		alarm[2] = 1 * room_speed;
 		alarm[3] = 0.1 * room_speed;
 	}

@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tutorials",
-    "path": "folders/Sprites/Tutorials.yy",
+    "name": "Others",
+    "path": "folders/Sprites/Others.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tutorial_keys_arrows",
