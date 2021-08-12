@@ -1,7 +1,7 @@
 /// @description Create other managers
 
 #macro LAYER_INSTANCES "Instances"
-#macro LAYER_BACKGROUND "Background"
+// #macro LAYER_BACKGROUND "Background"
 
 keys = instance_create_layer(0, 0, LAYER_INSTANCES, obj_keys);
 instance_create_layer(0, 0, LAYER_INSTANCES, obj_tutorial);

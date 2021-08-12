@@ -8,16 +8,16 @@ if (!freeze) {
 	y += (keyboard_check(key_down) - keyboard_check(key_up)) * spd;
 	
 	// Shoot logic
-	if (keyboard_check_pressed(key_shoot) && can_shoot) {
+	if (keyboard_check(key_shoot) && can_shoot) {
 		can_shoot = false;
-		instance_create_layer(x, y, LAYER_INSTANCES, obj_ufo_bullet);
+		instance_create_layer(x + 5, y - 10, LAYER_INSTANCES, obj_ufo_bullet);
 		alarm[1] = fire_rate * room_speed;
 	}
 	
 	// Bomb logic
-	if (keyboard_check_pressed(key_bomb) && can_shoot_bomb) {
+	if (keyboard_check(key_bomb) && can_shoot_bomb) {
 		can_shoot_bomb = false;
-		var bomb = instance_create_layer(x, y, LAYER_INSTANCES, obj_ufo_bomb);
+		var bomb = instance_create_layer(x + 5, y - 10, LAYER_INSTANCES, obj_ufo_bomb);
 		
 		// Calculate bomb direction
 		bomb.direction = -radtodeg(arctan2(y - last_y, x - last_x));

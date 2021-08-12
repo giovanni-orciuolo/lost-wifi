@@ -13,7 +13,7 @@ function kill_enemy(enemy_instance) {
 		hspeed = 0;
 		sprite_index = spr_death_small;
 		image_speed = 30 / room_speed;
-
-		obj_ufo.player_score += score_reward;
 	}
+	
+	obj_ufo.player_score += score_reward;
 }

@@ -4,7 +4,7 @@ if (!game_over) {
 	difficulty += 0.2 / room_speed;
 }
 
-layer_hspeed(layer_get_id(LAYER_BACKGROUND), -(1 + (difficulty / 10)));
+// layer_hspeed(layer_get_id(LAYER_BACKGROUND), -(1 + (difficulty / 10)));
 
 if (game_over && keyboard_check_pressed(obj_keys.keys_1p[? "shoot"])) {
 	game_over = false;

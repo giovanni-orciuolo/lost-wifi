@@ -1,18 +1,32 @@
 /// @description Draw tutorial keys
 
 // Margin is 5
-
-draw_sprite_ext(spr_tutorial_keys, 0, room_width / 2 - 138, 70, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_tutorial_keys, 1, room_width / 2 - 101, 33, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_tutorial_keys, 2, room_width / 2 - 101, 70, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_tutorial_keys, 3, room_width / 2 - 64, 70, 1, 1, 0, c_white, 1);
-
-draw_sprite_ext(spr_tutorial_keys, 4, room_width / 2 - 20, 35, 2, 2, 0, c_white, 1);
-
-draw_sprite_ext(spr_tutorial_keys, 5, room_width / 2 + 50, 60, 2, 2, 0, c_white, 1);
-
+var s = spr_tutorial_key_template;
 draw_set_halign(fa_center);
-draw_text(room_width / 2 - 83, 115, "MOVE");
-draw_text(room_width / 2, 115, "SHOOT");
-draw_text(room_width / 2 + 83, 115, "BOMB");
+draw_set_valign(fa_middle);
+
+draw_sprite_ext(s, 0, room_width / 2 - 118, 70, 1, 1, 0, c_white, 1);
+draw_text_transformed(room_width / 2 - 118, 70, "A", 1.5, 1.5, 0);
+
+draw_sprite_ext(s, 0, room_width / 2 - 81, 33, 1, 1, 0, c_white, 1);
+draw_text_transformed(room_width / 2 - 81, 33, "W", 1.5, 1.5, 0);
+
+draw_sprite_ext(s, 0, room_width / 2 - 81, 70, 1, 1, 0, c_white, 1);
+draw_text_transformed(room_width / 2 - 81, 70, "S", 1.5, 1.5, 0);
+
+draw_sprite_ext(s, 0, room_width / 2 - 44, 70, 1, 1, 0, c_white, 1);
+draw_text_transformed(room_width / 2 - 44, 70, "D", 1.5, 1.5, 0);
+
+draw_sprite_ext(s, 0, room_width / 2 + 20, 70, 1, 1, 0, c_white, 1);
+draw_text_transformed(room_width / 2 + 20, 70, "E", 1.5, 1.5, 0);
+
+draw_sprite_ext(s, 0, room_width / 2 + 90, 70, 1, 1, 0, c_white, 1);
+draw_text_transformed(room_width / 2 + 90, 70, "Q", 1.5, 1.5, 0);
+
+draw_set_valign(fa_top);
+
+draw_text(room_width / 2 - 81, 95, "MOVE");
+draw_text(room_width / 2 + 20, 95, "SHOOT");
+draw_text(room_width / 2 + 90, 95, "BOMB");
+
 draw_set_halign(fa_left);

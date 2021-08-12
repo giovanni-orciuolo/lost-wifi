@@ -1,6 +1,6 @@
 /// @description Shoot
 
-if (obj_manager.game_over) {
+if (obj_manager.game_over || dead) {
 	return;
 }
 
