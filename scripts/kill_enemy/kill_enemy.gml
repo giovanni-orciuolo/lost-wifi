@@ -16,6 +16,6 @@ function kill_enemy(enemy_instance) {
 		
 		obj_manager.player_score += score_reward;
 		
-		audio_play_sound(snd_crash, 10, false);
+		play_random_death_sound();
 	}
 }

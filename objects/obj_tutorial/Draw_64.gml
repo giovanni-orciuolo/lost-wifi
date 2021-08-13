@@ -23,6 +23,8 @@ draw_text_transformed(room_width / 2 + 20, 70, "E", 1.5, 1.5, 0);
 draw_sprite_ext(s, 0, room_width / 2 + 90, 70, 1, 1, 0, c_white, 1);
 draw_text_transformed(room_width / 2 + 90, 70, "Q", 1.5, 1.5, 0);
 
+draw_text_transformed(room_width / 2, room_height - 50, "KEEP YOUR WIFI ALIVE!", 1.25, 1.25, 0);
+
 draw_set_valign(fa_top);
 
 draw_text(room_width / 2 - 81, 95, "MOVE");

@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_shoot.ogg",
-  "duration": 0.365567,
+  "soundFile": "snd_hurt.ogg",
+  "duration": 1.855952,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_shoot",
+  "name": "snd_hurt",
   "tags": [],
   "resourceType": "GMSound",
 }

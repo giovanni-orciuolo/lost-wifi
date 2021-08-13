@@ -10,10 +10,17 @@ function hurt_player(player_inst) {
 			hspeed = 0;
 			sprite_index = spr_death_small;
 			image_speed = 30 / room_speed;
+			
+			if (audio_is_playing(ost_lost_wifi)) {
+				audio_stop_sound(ost_lost_wifi);
+			}
+
+			audio_play_sound(snd_death3, 10, false);
 			return;
 		}
 		
-		wifi_level -= 1000;
+		audio_play_sound(snd_hurt, 10, false);
+		wifi_level -= 800;
 		invincible = true;
 		
 		alarm[2] = 1 * room_speed;

@@ -66,6 +66,11 @@ if (beeping && alarm[0] == -1) {
 	alarm_set(0, 0.5 * room_speed);
 }
 
+if (!beeping) {
+	alarm[0] = -1;
+	wifi_beeping = false;
+}
+
 // Determine signal level
 wifi_signal = wifi_level > 3000 ? 4 : ceil(wifi_level / 1000);
 if (wifi_level <= 0) {

@@ -6,14 +6,21 @@ if (game_over) {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 
-	draw_text_transformed(room_width / 2, room_height / 2, "GAME OVER", 2, 2, 0);
-	draw_text_transformed(room_width / 2, (room_height / 2) + 35, "Score: " + string(new_score), 2, 2, 0);
+	if (text_show_gameover) {
+		draw_text_transformed(room_width / 2, room_height / 2, "GAME OVER", 2, 2, 0);
+	}
+	
+	if (text_show_score) {
+		draw_text_transformed(room_width / 2, (room_height / 2) + 35, "Score: " + string(new_score), 2, 2, 0);
+	}
 
-	if (new_score > high_score) {
+	if (text_show_highscore && new_score > high_score) {
 		draw_text_transformed(room_width / 2, (room_height / 2) + 60, "NEW HIGHSCORE!", 1.5, 1.5, 0);
 	}
 
-	draw_text(room_width / 2, (room_height / 2) + (new_score > high_score ? 95 : 80), "Press SHOOT to restart");
+	if (text_show_restart) {
+		draw_text(room_width / 2, (room_height / 2) + (new_score > high_score ? 95 : 80), "Press SHOOT to restart");
+	}
 
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);

@@ -14,6 +14,14 @@ new_score = 0;
 high_score = 0;
 is_coop = false;
 
-alarm[0] = (1.5 * room_speed) - difficulty;
+alarm[0] = 5 * room_speed;
+
+// Control variables for game over screen texts
+text_alarms_start = false;
+text_rate = 1.5 * room_speed;
+text_show_gameover = false;
+text_show_score = false;
+text_show_highscore = false;
+text_show_restart = false;
 
 room_goto_next();

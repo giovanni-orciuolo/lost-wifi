@@ -1,5 +1,5 @@
 {
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_crash.wav",
-  "duration": 0.536156,
+  "soundFile": "snd_death2.ogg",
+  "duration": 0.817494,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_crash",
+  "name": "snd_death2",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_shoot.ogg",
+  "soundFile": "snd_powerup.ogg",
   "duration": 0.365567,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_shoot",
+  "name": "snd_powerup",
   "tags": [],
   "resourceType": "GMSound",
 }
