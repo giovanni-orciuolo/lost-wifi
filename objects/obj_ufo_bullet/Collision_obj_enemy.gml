@@ -1,1 +1,3 @@
-instance_destroy();
+if (!other.dead) {
+	instance_destroy();
+}

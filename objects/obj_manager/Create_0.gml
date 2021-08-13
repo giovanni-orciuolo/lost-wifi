@@ -24,4 +24,15 @@ text_show_score = false;
 text_show_highscore = false;
 text_show_restart = false;
 
+// Coop player spawn
+var keys = obj_keys.key_bindings[| 1];
+p2_key_up = keys[? "up"];
+p2_key_down = keys[? "down"];
+p2_key_left = keys[? "left"];
+p2_key_right = keys[? "right"];
+p2_key_shoot = keys[? "shoot"];
+p2_key_bomb = keys[? "bomb"];
+
+coop_started = false;
+
 room_goto_next();

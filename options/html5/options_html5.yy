@@ -1,7 +1,7 @@
 {
-  "option_html5_browser_title": "Wifi Conqueror",
+  "option_html5_browser_title": "Lost Wifi",
   "option_html5_version": "1.0.0.0",
-  "option_html5_foldername": "wifi_conqueror",
+  "option_html5_foldername": "lost_wifi",
   "option_html5_outputname": "index.html",
   "option_html5_splash_png": "${base_options_dir}/html5/splash.png",
   "option_html5_usesplash": false,

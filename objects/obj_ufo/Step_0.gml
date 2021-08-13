@@ -1,5 +1,14 @@
 /// @description Logic
 
+// Key bindings
+var keys = obj_keys.key_bindings[| player_index];
+key_up = keys[? "up"];
+key_down = keys[? "down"];
+key_left = keys[? "left"];
+key_right = keys[? "right"];
+key_shoot = keys[? "shoot"];
+key_bomb = keys[? "bomb"];
+
 var last_x = x, last_y = y;
 
 if (!freeze) {
