@@ -52,9 +52,7 @@ if (wifi_level > 0) {
 }
 wifi_level = max(wifi_level, 0);
 
-if (wifi_level == 0) {
-	freeze = true;
-}
+freeze = (wifi_level == 0);
 
 // Start beeping when near new level
 var beeping = (wifi_level > 3000 && wifi_level <= 3300)

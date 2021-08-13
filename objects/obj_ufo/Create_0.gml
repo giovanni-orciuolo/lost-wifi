@@ -1,5 +1,6 @@
 /// @description Initialize keys
 var keys = obj_keys.key_bindings[| player_index];
+image_speed = 0;
 
 key_up = keys[? "up"];
 key_down = keys[? "down"];
@@ -30,4 +31,4 @@ show = true;
 dead = false;
 shield = false;
 
-image_speed = 0;
+player_index = instance_number(obj_ufo) - 1;
